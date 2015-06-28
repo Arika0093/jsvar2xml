@@ -34,8 +34,8 @@
 			this.ImportPath = new System.Windows.Forms.TextBox();
 			this.FileDialog = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
 			this.DebugMsg = new System.Windows.Forms.TextBox();
+			this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -131,12 +131,6 @@
 			this.label1.Text = "Import:";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
-			// backgroundWorker1
-			// 
-			this.backgroundWorker1.WorkerSupportsCancellation = true;
-			this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-			this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
-			// 
 			// DebugMsg
 			// 
 			this.tableLayoutPanel1.SetColumnSpan(this.DebugMsg, 3);
@@ -150,6 +144,12 @@
 			this.DebugMsg.TabIndex = 6;
 			this.DebugMsg.WordWrap = false;
 			this.DebugMsg.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DebugMsg_KeyDown);
+			// 
+			// backgroundWorker1
+			// 
+			this.backgroundWorker1.WorkerSupportsCancellation = true;
+			this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+			this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
 			// 
 			// Main
 			// 
